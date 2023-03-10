@@ -47,33 +47,6 @@ console.log('En la posicion:', 5 , 'el valor del arreglo es: ', arreglo[5])
 console.log('El arreglo es: ', arreglo)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // VARIABLES
 // termino(let,var,const) identificador/nombre de la variable = valor(tipo de dato)
 
@@ -135,7 +108,7 @@ const resultDif = valor1 !== valor2
 console.log('diferencia ',resultDif)
 
 // greater than --> mayor que
-const mayorQue = 9 >= 9
+const mayorQue = 10 >= 9;
 console.log('mayrorque', mayorQue)
 
 // less than ---> menor que
@@ -160,5 +133,8 @@ console.log(operadorOr)
 const notOperator = false
 console.log(notOperator)
 
-const ejercicio = ( 9 === 10) && !('1' === 1)
+const ejercicio = (( 8 > 5) || false) && !true;
+            //    (( true ||  false )) &&  false
+            //     (true) && false
+            //     false
 console.log(ejercicio)
