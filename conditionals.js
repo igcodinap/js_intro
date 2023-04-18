@@ -1,3 +1,7 @@
+// import
+// require
+const { calculadora } = require("./classes");
+
 // IF
 const x = null
 console.log(x)
@@ -21,5 +25,4 @@ if (time < 12) {
     console.log("Buenas noches")
 }
 
-
-
+calculadora.sumar2(10,2)

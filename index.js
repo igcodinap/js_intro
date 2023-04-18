@@ -29,7 +29,10 @@ const objetoProfe = {
     subObj: {
         subLlave: 'valor de la subllave'
     },
-    arreglo: ['bla', 'hola', 'chao']
+    arreglo: ['bla', 'hola', 'chao'],
+    addNumbers: (number1, number2) => {
+        return number1 + number2
+    }
 }
 
 console.log(objetoProfe)
