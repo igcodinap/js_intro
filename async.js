@@ -20,26 +20,26 @@
 
 //////////////////////////////////////////////
 
-const apiCall = fetch("https://jsonplaceholder.typicode.com/posts/1")
-  // lo que retorna la funcion lo estamos guardando en la variable data de abajo
-  .then((response) => {return response.json()})
-  // lo que retorna la funcion de arriba, lo estamos utilizando en la variable jsonData de abajo
-  .then((jsonData) => {
-    return console.log(jsonData);
-  })
-  .then(() => console.log('ya devolvimos el resultado de la promesa'))
-  .catch(() => {
-    return console.log("no funciono");
-});
+// const apiCall = fetch("https://jsonplaceholder.typicode.com/posts/1")
+//   // lo que retorna la funcion lo estamos guardando en la variable data de abajo
+//   .then((response) => {return response.json()})
+//   // lo que retorna la funcion de arriba, lo estamos utilizando en la variable jsonData de abajo
+//   .then((jsonData) => {
+//     return console.log(jsonData);
+//   })
+//   .then(() => console.log('ya devolvimos el resultado de la promesa'))
+//   .catch(() => {
+//     return console.log("no funciono");
+// });
 
 
 async function asyncFunction(param) {
     try {
         const url = 'https://jsonplaceholder.typicode.com/posts/' + param
         const response = await fetch(url)
-        const jsonData = await response.json()
+        const jsonData = await response.arrayBuffer()
         console.log(jsonData)
-        console.log(param)
+        console.log(response.status)
     } catch (error){
         console.log('houston tenemos un problema')
     }
